@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style (2).css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1><b>Phillips.</b></h1>
+            <ul>
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#Services">services</a></li>
+                <li><a href="#contact">contacts</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>TUM Student</p>
+            <h1>Hello everyone,I am <span>Phillip Owino</span></br> from Mombasa,Kenya</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------About------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\PHILLIP\Desktop\portfolio\phillip.jpg.jpg" alt="my image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Phillip Owino is a student at Technical University of Mombasa currently studying Diploma in Information Communication and Technology.He is currently in year one and a very smart dilligent and hardworking man.He hopes to be one of the best web developers after his studies not only in Kenya but across the world.Phillips hobbies are mostly swimming, watching movies, reading novels e.t.c.You can contact Phillip at +254702291899 and phillipowino203@gmail.com. </p>
+                
+                <div class="tab-titles">
+                    <div class="tab-contents active-tab active-link" id="Skills">
+                        <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                        <ul>
+                            <li><span>Web development</span></br>web app development</li>
+                            <li><span>App Development</span></br>Designing application softwares</li>
+                            <li><span>Online Writing</span></br>Writing and Data analysing</li>
+                        </ul>
+                    </div>
+                </br>
+                    <div class="tab-contents active-tab active-link" id="Education">
+                        <p class="tab-links active-link"onclick="opentab('Education')">Education</p>
+                        <ul>
+                            <li><span>2023-2025</span></br>Technical University of Mombasa</li>
+                            <li><span>2017-2021</span></br>Kenyatta High School Mwatate</li>
+                            <li><span>2010-2016</span></br>Kingdom Heritage Model Schools</li>
+                        </ul>
+                    </div>   
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+ <div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>i design and construct websites ensuring that the sites i have created meet the users expectations.My goal is to make the websites look good,run smoothly and offer easy access points with no loading issues between pages or error messages</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>phillowi94@gmail.com</p>
+                <p>0702291899</p>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your name"required>
+                    <input type="email" name="email" placeholder="Your email"required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright© Phillip.Made by Phillip</p>
+    </div>
+</div>
+<script>
+     var tablinks= document.getElementsByClassName("tab-links");
+     var tabcontents= documents.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+</body>
+</html>
